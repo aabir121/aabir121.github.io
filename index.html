@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aabir Hassan - Portfolio</title>
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #121212;
+            color: #fff;
+            text-align: center;
+        }
+
+        /* Navbar */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(20, 20, 20, 0.9);
+            padding: 15px 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #00c2ff;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .hero img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #00c2ff;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: #bbb;
+        }
+
+        /* Social Links */
+        .social-links {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: #00c2ff;
+            font-size: 2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.2);
+            color: #008ecf;
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 20px;
+            width: 80%;
+            margin: auto;
+        }
+
+        /* About Section */
+        .about, .contact {
+            background: #1c1c1c;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            margin-bottom: 40px;
+        }
+
+        .about h2, .skills h2, .contact h2 {
+            font-size: 2rem;
+            color: #00c2ff;
+            margin-bottom: 10px;
+        }
+
+        .about p, .contact p {
+            font-size: 1rem;
+            color: #ccc;
+        }
+
+        /* Skills Section */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .skill-box {
+            background: linear-gradient(135deg, #00c2ff, #008ecf);
+            color: #121212;
+            padding: 15px 25px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            box-shadow: 0px 4px 10px rgba(0, 194, 255, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .skill-box:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 6px 15px rgba(0, 194, 255, 0.6);
+        }
+
+        /* Contact */
+        .contact p a {
+            color: #00c2ff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact p a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            padding: 20px;
+            background: #181818;
+            text-align: center;
+            color: #bbb;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <img src="avatar.png" alt="Aabir Hassan">
+        <h1>Aabir Hassan</h1>
+        <p>Software Engineer | Java | Angular | Microservices</p>
+        
+        <!-- Social Links -->
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/aabir-hassan/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/aabir121" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://aabir-hassan.medium.com/" target="_blank"><i class="fab fa-medium"></i></a>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Experienced Software Engineer specializing in Angular, Java, Spring Boot, and microservices. Passionate about building scalable, high-performance applications.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="about">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-box">Angular</div>
+            <div class="skill-box">Java</div>
+            <div class="skill-box">Spring Boot</div>
+            <div class="skill-box">Microservices</div>
+            <div class="skill-box">MongoDB</div>
+            <div class="skill-box">PostgreSQL</div>
+            <div class="skill-box">Docker</div>
+            <div class="skill-box">Kubernetes</div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:aabir121@hotmail.com">aabir121@hotmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/aabir-hassan/" target="_blank">linkedin.com/in/aabir-hassan</a></p>
+    </section>
+
+    <footer>
+        <p>© 2025 Aabir Hassan. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
